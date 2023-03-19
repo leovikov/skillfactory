@@ -2,10 +2,9 @@
 
 import numpy as np
 
-# Функция, которая угадает number
 def game_predict(number):
-    """Функция угадывающая число от 1 до 100.
-    Функция учитывает информацию о том, больше или меньше случайное число нужного нам числа.
+    """Функция угадывающая число от 1 до 100
+    Функция учитывает информацию о том, больше или меньше случайное число нужного нам числа
 
     Args:
         number: Загаданное компьютером число
@@ -13,7 +12,7 @@ def game_predict(number):
     Returns:
         count: Количество попыток
     """
-    count = 0 # Задаём переменную
+    count = 0
 
     # Сначала пробуем среднее значение, чтобы сократить зону поиска
     predict_number = 50
@@ -65,11 +64,19 @@ def game_predict(number):
                 if number == predict_number:
                     return count
 
-# Функция, которая возращает среднее количество попыток
-def score_game(game_predict) -> int:
+
+def score_game(game_predict):
+    """Функция, которая показывает среднее затраченное количество попыток
+
+    Args:
+        game_predict: Функция угадывающая число
+
+    Returns:
+        score: Среднее количество попыток
+    """
     
     count_ls = []
-    random_array = np.random.randint(1, 101, size=(1000))  # Загадываем список чисел
+    random_array = np.random.randint(1, 101, size=(1000))  # Загадываем 1000 чисел
 
     for number in random_array:
         count_ls.append(game_predict(number))
