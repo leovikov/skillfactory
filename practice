@@ -1,0 +1,2 @@
+ult = lambda x,y : x*y
+print(ult(1,2))
