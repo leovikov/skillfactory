@@ -12,4 +12,4 @@
 - Отбор и преобразование признаков;
 - Создание и обучение модели машинного обучения.
 
-Информация о соревновании на площадке Kaggle: https://www.kaggle.com/competitions/sf-booking
+Исходные данные и полная информация о соревновании на площадке Kaggle: https://www.kaggle.com/competitions/sf-booking
